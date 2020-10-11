@@ -1,118 +1,266 @@
-# Portfolio for developers
+# Gatsby Simplefolio ⚡️ [![GitHub](https://img.shields.io/github/license/cobidev/gatsby-simplefolio?color=blue)](https://github.com/cobidev/gatsby-simplefolio/blob/master/LICENSE.md) ![GitHub stars](https://img.shields.io/github/stars/cobidev/gatsby-simplefolio) ![GitHub forks](https://img.shields.io/github/forks/cobidev/gatsby-simplefolio)
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/settings?s=https%3A%2F%2Fgithub.com%2Fsmakosh%2Fgatsby-portfolio-dev&c=1&env=GATSBY_PORTFOLIO_GITHUB_TOKEN%2CGATSBY_PORTFOLIO_FORMIK_ENDPOINT%2CGATSBY_PORTFOLIO_RECAPTCHA_KEY&envDescription=Required%20to%20fetch%20your%20repositories%20from%20GitHub&envLink=https://github.com/smakosh/gatsby-portfolio-dev&framework=nextjs)
+## A clean, beautiful and responsive portfolio template for Developers
 
-[![Powered by Vercel](./powered-by-vercel.svg)](https://vercel.com?utm_source=smakosh)
-
-## Theme
-
-[Gatsby-theme-portfolio](https://github.com/smakosh/gatsby-theme-portfolio)
+<h2 align="center">
+  <img src="https://github.com/cobidev/gatsby-simplefolio/blob/master/examples/example.gif" alt="Gatsby Simplefolio" width="600px" />
+  <br>
+</h2>
 
 ## Features
 
-- Eslint/Prettier configured
-- Scores 100% on a11y / Performance / PWA / SEO
-- PWA (desktop & mobile)
-- Easy to customize
-- Nice project structure
-- Amazing illustrations by [Undraw.co](https://undraw.co)
-- Tablet & mobile friendly
-- Continuous deployment with [Vercel](https://vercel.com/?utm_source=smakosh)
-- Or with Netlify, check [Netlify branch](https://github.com/smakosh/gatsby-portfolio-dev/tree/netlify)
-- A contact form protected by Google Recaptcha
-- Can be deployed with one click
-- Functional components with ~~Recompose~~ React Hooks! ~~ready to migrate to React hooks!~~
-- Fetches your Github pinned projects with most stars (You could customize this if you wish)
-- One click deployment to Vercel
+⚡️ Modern UI Design + Reveal Animations\
+⚡️ One Page Layout built with React\
+⚡️ Styled with Bootstrap v4.3 + Custom SCSS\
+⚡️ Fully Responsive\
+⚡️ Configurable color scheme\
+⚡️ Image optimization with Gatsby\
+⚡️ Easy site customization\
+⚡️ Well organized documentation
 
-## Design
+To view a demo example, **[click here](https://gatsby-simplefolio.netlify.com/)**\
+To view a live example, **[click here](https://cobidev.com/)**
 
-Project on [Behance](https://www.behance.net/gallery/74172961/Free-Gatsby-portfolio-for-developers)
+---
 
-## Structure
+## Getting Started 🚀
 
-```bash
-.
-├── data
-│   └── config              # SEO related tags
-├── src
-│   └── assets              # Assets
-│   │   │── icons             # icons
-│   │   │── illustrations     # illustrations from (undraw.co)
-│   │   └── thumbnail         # cover of your website when it's shared to social media
-│   ├── components          # Components
-│   │   │── common            # Common components
-│   │   │── landing           # Components used on the landing page
-│   │   └── theme             # Header & Footer
-│   └── pages               # Pages
-└── static                  # favicon & Netlify redirects
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+
+### Prerequisites 📋
+
+You'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [NPM](http://npmjs.com)) installed on your computer.\
+Also you need to have installed [Gatsby CLI](https://www.gatsbyjs.org/docs/quick-start/)
+
+```
+node@v10.16.0 or higher
+npm@6.9.0 or higher
+git@2.17.1 or higher
+gatsby-cli@2.8.22 or higher
 ```
 
-## Prerequisites
+Also, you can use [Yarn](https://yarnpkg.com/) instead of NPM ☝️
 
-### Online
-
-1. Create an account at [Formik](https://formik.com/?utm_source=smakosh) and grab your form endpoint url
-2. Grab a Google recaptcha key from [Google Recaptcha](https://www.google.com/recaptcha/admin)
-3. Grab your Github token from [GitHub](https://github.com/settings/tokens/new?scopes=repo&description=portfolio-dev)
-4. Click [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/settings?s=https%3A%2F%2Fgithub.com%2Fsmakosh%2Fgatsby-portfolio-dev&c=1&env=GATSBY_PORTFOLIO_GITHUB_TOKEN%2CGATSBY_PORTFOLIO_FORMIK_ENDPOINT%2CGATSBY_PORTFOLIO_RECAPTCHA_KEY&envDescription=Required%20to%20fetch%20your%20repositories%20from%20GitHub&envLink=https://github.com/smakosh/gatsby-portfolio-dev&framework=nextjs) and pass in your:
-  
-  - Formik form endpoint
-  - Google recaptcha public key
-  - Github token
-
-To Env variables section.
-
-### Locally
-
-1. Create an account at [Formik](https://formik.com/?utm_source=smakosh)
-2. Install [Yarn](https://yarnpkg.com/en/)
-3. Grab a Google recaptcha key from [Google Recaptcha](https://www.google.com/recaptcha/admin)
-4. Grab your Github token from GitHub
-5. Run `cp .env.development.template .env.development`
-6. Run `yarn && yarn start`
-
-> You could run `vercel env pull` to get your env variables from Vercel.
-
-### Deploying locally to Vercel
-
-I highly recommend that you push to GitHub/GitLab and deploy your repository to Vercel instead or just hit the Deploy button.
-
-### Clean the cache
-
-This removes the `.cache/` & `public/` folders
-
-```bash
-yarn reset
+```
+yarn@v1.21.1 or higher
 ```
 
-## Built with
+---
 
-- Adobe XD
-- Gatsby
-- React & GraphQL
-- Formik
-- Google recaptcha
-- VSCode
-- And these useful of JavaScript libraries & Gatsby plugins [package.json](package.json)
+## How To Use 🔧
 
-## License
+From your command line, first clone Simplefolio:
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for more details
+```bash
+# Clone this repository
+$ git clone https://github.com/cobidev/gatsby-simplefolio
 
-## Contributors
+# Go into the repository
+$ cd gatsby-simplefolio
 
-- [Ajay NS](https://github.com/ajayns) https://github.com/smakosh/gatsby-portfolio-dev/pull/3
-- [Ryan Lee](https://github.com/drdgvhbh) https://github.com/smakosh/gatsby-portfolio-dev/pull/6
-- [David](https://github.com/davidavz) https://github.com/smakosh/gatsby-portfolio-dev/pull/8
-- [Léu Almeida](https://github.com/LeuAlmeida) https://github.com/smakosh/gatsby-portfolio-dev/pull/21
-- [Kudakwashe Mupeni](https://github.com/2wce) https://github.com/smakosh/gatsby-portfolio-dev/pull/20
-- [sasannnn](https://github.com/sasannnn) https://github.com/smakosh/gatsby-portfolio-dev/pull/22
-- [Michael Seifarth](https://github.com/Kageetai) https://github.com/smakosh/gatsby-portfolio-dev/pull/27
-- [Hugo](https://github.com/Kronicom) https://github.com/smakosh/gatsby-portfolio-dev/pull/34 https://github.com/smakosh/gatsby-portfolio-dev/pull/35
-- [manula thejan](https://github.com/manula2004) https://github.com/smakosh/gatsby-portfolio-dev/pull/38
-- [Smakosh](https://smakosh.com)
+# Remove current origin repository
+$ git remote remove origin
+```
 
-## Support
+Then you can install the dependencies either using NPM or Yarn:
 
-If you love this Gatsby template and want to support me, you can do so through my GitHub profile.
+Using NPM:
+
+```bash
+# Install dependencies
+$ npm install
+
+# Start development server
+$ npm run develop
+```
+
+Using Yarn:
+
+```bash
+# Install dependencies
+$ yarn
+
+# Start development server
+$ yarn develop
+```
+
+**NOTE**:
+If your run into issues installing the dependencies with NPM, use this command:
+
+```bash
+# Install dependencies with all permissions
+$ sudo npm install --unsafe-perm=true --allow-root
+```
+
+Once your server has started, go to this url `http://localhost:8000/` and you will see the website running on a Development Server:
+
+<h2 align="center">
+  <img src="https://github.com/cobidev/gatsby-simplefolio/blob/master/examples/example.png" alt="Gatsby Simplefolio" width="100%">
+</h2>
+
+---
+
+## Instructions:
+
+### Step 1 - STRUCTURE
+
+Go to `/src/mock/data.js` and fill your information, they are 5 objects:
+
+### Hero Section
+
+```javascript
+export const heroData = {
+  title: '', // Hello, my name is
+  name: '', // John
+  subtitle: '', // I'm the Unknown Developer.
+  cta: '', // Know more
+};
+```
+
+### About Section
+
+**_Important Note_**: All the images must live inside the `src/images/` folder in order for Gatsby to show the images correctly.
+
+```javascript
+export const aboutData = {
+  img: 'profile.jpg', // put your profile image (recommended aspect radio: square)
+  paragraphOne: '',
+  paragraphTwo: '',
+  paragraphThree: '',
+  resume: 'https://www.resumemaker.online/es.php', // if no resume, the button will not show up
+};
+```
+
+### Projects Section
+
+**_Important Note_**: All the images must live inside the `src/images/` folder in order for Gatsby to show the images correctly.
+
+Put as many projects object you want inside the `array`.
+
+```javascript
+export const projectsData = [
+  {
+    id: nanoid(),
+    img: 'project.jpg',
+    title: '',
+    info: '',
+    info2: '',
+    url: '',
+    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
+  },
+  {
+    id: nanoid(),
+    img: 'project.jpg',
+    title: '',
+    info: '',
+    info2: '',
+    url: '',
+    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
+  },
+  ...
+];
+```
+
+### Contact Section
+
+```javascript
+export const contactData = {
+  cta: '', // call to action text for the contact section
+  btn: '', // text inside the button
+  email: '',
+};
+```
+
+### Footer Section
+
+You can remove or add as many you social-media icons you want.\
+Just put an object with the corresponding values inside the networks `array` or remove it from there.
+
+```javascript
+export const footerData = {
+  networks: [
+    {
+      id: nanoid(),
+      name: 'twitter',
+      url: '', // your twitter url
+    },
+    {
+      id: nanoid(),
+      name: 'codepen',
+      url: '', // your codepen url
+    },
+    {
+      id: nanoid(),
+      name: 'linkedin',
+      url: '', // your linkedin url
+    },
+    {
+      id: nanoid(),
+      name: 'github',
+      url: '', // your github url
+    },
+  ],
+};
+```
+
+### Required - Disable GitHub buttons
+
+Set `isEnabled` to `false` once you finish setup your portfolio.\
+By setting to `false` it will hide the GitHub stars/fork buttons
+
+```javascript
+export const githubButtons = {
+  isEnabled: true, // true is the default value
+};
+```
+
+### Step 2 - STYLES
+
+Change the color theme of the website ( choose 2 colors to create a gradient ):
+
+Go to `src/styles/abstracts/_variables.scss` and only change the values on this classes `$main-color` and `$secondary-color` to your prefered HEX color
+
+```scss
+// Default values
+$main-color: #02aab0;
+$secondary-color: #00cdac;
+```
+
+**_Note_**: I highly recommend to checkout gradients variations on [UI Gradient](https://uigradients.com/#BrightVault)
+
+---
+
+## Deployment 📦
+
+Once you have done with your setup. You need to put your website online!
+
+I highly recommend to use [Netlify](https://netlify.com) to achieve this on the EASIEST WAY
+
+## Others versions 👥
+
+[Simplefolio](https://github.com/cobidev/simplefolio) by [Jacobo Martinez](https://github.com/cobidev)\
+[Ember.js Simplefolio](https://github.com/sernadesigns/simplefolio-ember) by [Michael Serna](https://github.com/sernadesigns)
+
+## Technologies used 🛠️
+
+- [Gatsby](https://www.gatsbyjs.org/) - Static Site Generator
+- [GraphQL](https://graphql.org/) - Query language for APIs
+- [React](https://es.reactjs.org/) - Front-End JavaScript library
+- [Bootstrap 4](https://getbootstrap.com/docs/4.3/getting-started/introduction/) - Front-End UI library
+- [Sass](https://sass-lang.com/documentation) - CSS extension language
+
+## Authors
+
+- **Jacobo Martinez** - [https://github.com/cobidev](https://github.com/cobidev)
+
+## Status
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/2365af6f-820a-4fb8-83e6-69a66f686dfe/deploy-status)](https://app.netlify.com/sites/gatsby-simplefolio/deploys)
+
+## License 📄
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+
+## Acknowledgments 🎁
+
+I was motivated to create this project because I wanted to contribute on something useful for the dev community, thanks to [ZTM Community](https://github.com/zero-to-mastery) and [Andrei](https://github.com/aneagoie)
