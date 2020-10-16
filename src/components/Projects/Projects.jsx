@@ -5,6 +5,8 @@ import { Container, Row, Col } from 'react-bootstrap';
 import PortfolioContext from '../../context/context';
 import Title from '../Title/Title';
 import ProjectImg from '../Image/ProjectImg';
+import SlideShow from '../Image/SlideShow';
+import { projectsData } from '../../mock/data';
 
 const Projects = () => {
   const { projects } = useContext(PortfolioContext);
@@ -24,94 +26,39 @@ const Projects = () => {
 
   return (
     <section id="projects">
-      <Container>
-        <div className="project-wrapper">
-          <Title title="Projects" />
-          {projects.map((project) => {
-            const { title, info, info2, url, repo, img, id } = project;
-
+      <div className="project-wrapper">
+        <Title title="Projects" />
+        <div className="flex-container">
+          {projectsData.map((project) => {
+            const { title, info, point, url, tag, img, id } = project;
             return (
-              <Row key={id}>
-                <Col lg={4} sm={12}>
-                  <Fade
-                    left={isDesktop}
-                    bottom={isMobile}
-                    duration={1000}
-                    delay={500}
-                    distance="30px"
-                  >
-                    <div className="project-wrapper__text">
-                      <h3 className="project-wrapper__text-title">{title || 'Project Title'}</h3>
-                      <div>
-                        <p>
-                          {info ||
-                            'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi neque, ipsa animi maiores repellendu distinctioaperiam earum dolor voluptatum consequatur blanditiis inventore debitis fuga numquam voluptate architecto itaque molestiae.'}
-                        </p>
-                        <p className="mb-4">{info2 || ''}</p>
-                      </div>
-                      <a
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="cta-btn cta-btn--hero"
-                        href={url || '#!'}
-                      >
-                        See Live
-                      </a>
-
-                      {repo && (
-                        <a
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="cta-btn text-color-main"
-                          href={repo}
-                        >
-                          Source Code
-                        </a>
-                      )}
-                    </div>
-                  </Fade>
-                </Col>
-                <Col lg={8} sm={12}>
-                  <Fade
-                    right={isDesktop}
-                    bottom={isMobile}
-                    duration={1000}
-                    delay={1000}
-                    distance="30px"
-                  >
-                    <div className="project-wrapper__image">
-                      <a
-                        href={url || '#!'}
-                        target="_blank"
-                        aria-label="Project Link"
-                        rel="noopener noreferrer"
-                      >
-                        <Tilt
-                          options={{
-                            reverse: false,
-                            max: 8,
-                            perspective: 1000,
-                            scale: 1,
-                            speed: 300,
-                            transition: true,
-                            axis: null,
-                            reset: true,
-                            easing: 'cubic-bezier(.03,.98,.52,.99)',
-                          }}
-                        >
-                          <div data-tilt className="thumbnail rounded">
-                            <ProjectImg alt={title} filename={img} />
-                          </div>
-                        </Tilt>
-                      </a>
-                    </div>
-                  </Fade>
-                </Col>
-              </Row>
+              <div class="card">
+                <h1 className="title" >{title}</h1>
+                <div className="link">
+                  <a href={url}>{url}</a>
+                </div>
+                <div className="image-container">
+                  {!Array.isArray(img) && <ProjectImg alt={title} filename={img} />}
+                  {Array.isArray(img) && <SlideShow alt={title} filearray={img} />}
+                </div>
+                <p className="description">{info}</p>
+                <div className="bullet">
+                  <ul>
+                    {Object.values(point).map((value, index) => {
+                      return <li>{value}</li>
+                    })}
+                  </ul>
+                </div>
+                <div className="tag-container">
+                  {Object.values(tag).map((value) => {
+                    return <div className="tag"> {value} </div>
+                  })}
+                </div>
+              </div>
             );
           })}
         </div>
-      </Container>
+      </div>
     </section>
   );
 };

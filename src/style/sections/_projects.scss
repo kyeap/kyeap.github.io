@@ -9,11 +9,80 @@
     padding-top: 5rem;
   }
 
+  .tag-container {
+    margin: 10px auto;
+  }
+
+  .tag {
+    display: inline-block;
+    background-color: #cdd1d4;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 0px 10px;
+    font-size: 15px;
+  }
+
   .project-wrapper {
     margin-bottom: 15rem;
 
     @include respond(phone) {
       margin-bottom: 0rem;
+    }
+
+    .flex-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content:space-evenly;
+    }
+
+    .card {
+      border-color: #02aab0;
+      border-width: 2px;
+      border-radius: 55px;
+      width: 45%;
+      margin: 10px;
+    }
+
+    .title {
+      margin: 10px 0 0 0;
+    }
+
+    .link {
+      margin: 0 0 15px 0;
+    }
+
+    @media only screen and (max-width: 600px) {
+      .card {
+        width: 100%;
+      }
+    }
+
+    .description {
+      text-align: center;
+      width: 90%;
+      margin: 10px auto;
+      font-size: 20px;
+    }
+
+    .bullet {
+      text-align: left;
+    }
+    .bullet > ul {
+      display: inline-block;
+    }
+
+    li {
+      text-align: left;
+      font-size: 15px;
+    }
+
+    .image-container {
+      max-width: 400px;
+      max-height: 400px;
+      overflow: hidden;
+      object-fit: contain;
+      text-align: center;
+      margin: 0 auto;
     }
 
     .row {
