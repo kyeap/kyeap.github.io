@@ -1,0 +1,139 @@
+#resume{
+    background-color: lightgray;
+    height: 100vh;
+    width: 100%;
+
+    .container-resume{
+        display: flex;
+        padding: 50px 0 0 0;
+    }
+
+    .column {
+        display: inline-block;
+        width: 33%;
+    }
+
+    // .left {
+    //     position: relative;
+    // }
+
+    .resume-circle {
+        height: 80vh;
+        width: 70%;
+        display: block;
+        margin: 0 auto;
+        max-height: 800px;
+        border-radius: 50px;
+        -webkit-box-shadow: 18px 11px 33px -4px rgba(168,168,168,1);
+        -moz-box-shadow: 18px 11px 33px -4px rgba(168,168,168,1);
+        box-shadow: 18px 11px 33px -4px rgba(168,168,168,1);
+        //to center horizontally and vertically
+        // margin: 0;
+        // position: absolute;
+        // top: 50%;
+        // left: 50%;
+        // -ms-transform: translate(-50%, -50%);
+        // transform: translate(-50%, -50%);
+    }
+
+    img {
+        margin: 30px 0px;
+        border-radius: 50%;
+    }
+
+    .resume-circle-footer-name {
+        font-size: 20px;
+        font-weight: bold;
+        margin: 0 0 20px 0;
+    }
+
+    .resume-circle-footer-link {
+        font-size: 15px;
+        font-weight: bold;
+        text-align: left;
+    }
+
+    .container-resume-circle-footer {
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .container-resume-circle-footer-block {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .section-resume {
+        margin: 0 0 20px 0;
+    }
+
+    .section-resume-title {
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    .section-resume-subTitle {
+        font-size: 20px;
+    }
+
+    .section-resume-uni {
+        font-size: 15px;
+        font-style:italic;
+        margin: 0 0 10px 0;
+    }
+
+    @media only screen and (max-width: 1000px) {
+        #resume {
+            background-color: white;
+        }
+
+        .container-resume {
+            display: block;
+        }
+
+        .column {
+            width: 100%;
+        }
+      }
+
+    .mid {
+        text-align: left;
+        padding: 0px 15px 0px 0px;
+    }
+
+    .right {
+        text-align: left;
+    }
+
+    ul {
+        list-style-position:inside;
+        padding-left:0;
+        margin-bottom: 2rem;
+    }
+
+    .list-resume {
+        font-size: 15px;
+        margin: 5px 0px;
+    }
+
+    .tag-container {
+        margin: 10px auto;
+    }
+
+    .tag {
+        display: inline-block;
+        background-color: #55585a;
+        border-radius: 10px;
+        color: #ffffff;
+        margin: 5px;
+        padding: 0px 10px;
+        font-size: 15px;
+      }
+    
+    .title {
+        text-align: center;
+        margin: 0 auto;
+        font-size: 10.5rem;
+    }
+}
