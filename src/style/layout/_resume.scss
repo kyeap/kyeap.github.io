@@ -3,6 +3,20 @@
     height: 100vh;
     width: 100%;
 
+    a:link {
+        color: black;
+        text-decoration: none;
+      }
+      
+    a:visited {
+        color: black;
+        text-decoration: none;
+    }
+    
+    a:hover {
+        color: blue;
+    }
+
     .container-resume{
         display: flex;
         padding: 50px 0 0 0;
@@ -20,13 +34,15 @@
     .resume-circle {
         height: 80vh;
         width: 70%;
-        display: block;
+        display: flex;
+        flex-direction: column;
         margin: 0 auto;
         max-height: 800px;
         border-radius: 50px;
         -webkit-box-shadow: 18px 11px 33px -4px rgba(168,168,168,1);
         -moz-box-shadow: 18px 11px 33px -4px rgba(168,168,168,1);
         box-shadow: 18px 11px 33px -4px rgba(168,168,168,1);
+        position: relative;
         //to center horizontally and vertically
         // margin: 0;
         // position: absolute;
@@ -37,8 +53,20 @@
     }
 
     img {
-        margin: 30px 0px;
+        margin: 30px auto;
         border-radius: 50%;
+    }
+
+    .container-resume-circle-footer {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .container-resume-circle-footer-block {
+        position: absolute;
+        bottom: 100px;
+        left: auto;
     }
 
     .resume-circle-footer-name {
@@ -51,17 +79,7 @@
         font-size: 15px;
         font-weight: bold;
         text-align: left;
-    }
-
-    .container-resume-circle-footer {
-        display: flex;
-        align-items: flex-end;
-    }
-
-    .container-resume-circle-footer-block {
-        display: block;
-        margin: 0 auto;
-        text-align: center;
+        margin: 10px 0;
     }
 
     .section-resume {

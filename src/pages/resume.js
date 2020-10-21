@@ -1,5 +1,7 @@
 import react from 'react';
 import resumepic from '../images/resumepic.jpg';
+import { FaGithub, FaLinkedin, FaPhoneSquareAlt} from 'react-icons/fa';
+import { HiMail } from "react-icons/hi";
 
 export default () => {
 
@@ -9,17 +11,28 @@ export default () => {
                 <div className="column">
                     <div className="resume-circle">
                         <img src={resumepic} />
+                        <div className="resume-circle-footer-name">Yeap, Ken Joo</div>
                         <div className="container-resume-circle-footer">
-                            <div className="container-resume-circle-footer-block">
-                                <div className="resume-circle-footer-name">Yeap, Ken Joo</div>
-                                <div className="resume-circle-footer-link">kenjoo.yeap@gmail.com</div>
-                                <div className="resume-circle-footer-link">
-                                    <i class="fab fa-linkedin" href=""></i>
-                                    www.linkedin.com/in/kenjoo-yeap/
+                            {/* <div className="container-resume-circle-footer-block"> */}
+                                <div className="resume-circle-footer-link"> 
+                                    <FaPhoneSquareAlt/> +44 0792 8888 675
                                 </div>
                                 <div className="resume-circle-footer-link">
-                                    <i class="fab fa-github" href=""></i> https://github.com/kyeap</div>
-                            </div>
+                                    <a href={`mailto:kenjoo.yeap@gmail.com`}>
+                                        <HiMail/> kenjoo.yeap@gmail.com
+                                    </a>
+                                </div>
+                                <div className="resume-circle-footer-link">
+                                    <a href="www.linkedin.com/in/kenjoo-yeap/">
+                                        <FaLinkedin/> username: kenjoo-yeap
+                                    </a>    
+                                </div>
+                                <div className="resume-circle-footer-link">
+                                    <a href="https://github.com/kyeap"> 
+                                    <FaGithub/> username: kyeap
+                                    </a>
+                                </div>
+                            {/* </div> */}
                         </div>
                     </div>
                 </div>
