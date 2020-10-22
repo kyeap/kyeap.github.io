@@ -1,6 +1,6 @@
 #resume{
     background-color: lightgray;
-    height: 100vh;
+    height: 100%;
     width: 100%;
 
     a:link {
@@ -26,10 +26,6 @@
         display: inline-block;
         width: 33%;
     }
-
-    // .left {
-    //     position: relative;
-    // }
 
     .resume-circle {
         height: 80vh;
@@ -101,20 +97,6 @@
         margin: 0 0 10px 0;
     }
 
-    @media only screen and (max-width: 1000px) {
-        #resume {
-            background-color: white;
-        }
-
-        .container-resume {
-            display: block;
-        }
-
-        .column {
-            width: 100%;
-        }
-      }
-
     .mid {
         text-align: left;
         padding: 0px 15px 0px 0px;
@@ -154,4 +136,40 @@
         margin: 0 auto;
         font-size: 10.5rem;
     }
+
+    @media only screen and (max-width: 1000px) {
+
+        .container-resume {
+            display: flex;
+            padding: 50px 0 0 0;
+            flex-direction: column;
+        }
+
+        .column {
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        .mid {
+            margin: 50px auto 0 auto;
+        }
+
+        img {
+            width:150px;
+        }
+
+        .resume-circle-footer-link.desktop {
+            display: none;
+        }
+
+        .resume-circle-footer-link.mobile {
+            display: block;
+        }
+
+        .mobile-gmail {
+            font-style: italic;
+            font-size: 10px;
+            padding: 0 20px;
+        }
+      }
 }

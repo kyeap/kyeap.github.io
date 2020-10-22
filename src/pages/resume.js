@@ -1,10 +1,9 @@
-import react from 'react';
+import React from 'react';
 import resumepic from '../images/resumepic.jpg';
 import { FaGithub, FaLinkedin, FaPhoneSquareAlt} from 'react-icons/fa';
 import { HiMail } from "react-icons/hi";
 
 export default () => {
-
     return (
         <div id="resume">
             <div className="container-resume">
@@ -17,19 +16,36 @@ export default () => {
                                 <div className="resume-circle-footer-link"> 
                                     <FaPhoneSquareAlt/> +44 0792 8888 675
                                 </div>
-                                <div className="resume-circle-footer-link">
+                                <div className="resume-circle-footer-link desktop">
                                     <a href={`mailto:kenjoo.yeap@gmail.com`}>
                                         <HiMail/> kenjoo.yeap@gmail.com
                                     </a>
                                 </div>
-                                <div className="resume-circle-footer-link">
+                                <div className="resume-circle-footer-link mobile">
+                                    <a href={`mailto:kenjoo.yeap@gmail.com`}>
+                                        <HiMail/> kenjoo.yeap
+                                    </a>
+                                    <div class="mobile-gmail">@gmail.com</div>
+                                </div>
+                                
+                                <div className="resume-circle-footer-link desktop">
                                     <a href="www.linkedin.com/in/kenjoo-yeap/">
                                         <FaLinkedin/> username: kenjoo-yeap
                                     </a>    
                                 </div>
-                                <div className="resume-circle-footer-link">
+                                <div className="resume-circle-footer-link mobile">
+                                    <a href="www.linkedin.com/in/kenjoo-yeap/">
+                                        <FaLinkedin/> kenjoo-yeap
+                                    </a>    
+                                </div>
+                                <div className="resume-circle-footer-link desktop">
                                     <a href="https://github.com/kyeap"> 
                                     <FaGithub/> username: kyeap
+                                    </a>
+                                </div>
+                                <div className="resume-circle-footer-link mobile">
+                                    <a href="https://github.com/kyeap"> 
+                                    <FaGithub/> kyeap
                                     </a>
                                 </div>
                             {/* </div> */}
