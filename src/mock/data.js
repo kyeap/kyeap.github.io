@@ -11,7 +11,7 @@ export const headData = {
 export const heroData = {
   title: 'Hi, this is',
   name: 'Ken.',
-  subtitle: 'The developer you are about to know.',
+  subtitle: 'Technology | Engineering | Business',
   cta: '',
 };
 
@@ -28,7 +28,7 @@ export const aboutData = {
 export const projectsData = [
   {
     id: nanoid(),
-    img: ['Ilios.png', 'twine.jpg'],
+    img: ['Ilios.png', 'ilios_logo','ilios_item'],
     title: 'Ilios App',
     info:
       'Backend developer for an ecommerce App for individual buyers, retailers and resellers using laravel.',
@@ -41,7 +41,7 @@ export const projectsData = [
   },
   {
     id: nanoid(),
-    img: 'twine.jpg',
+    img: ['twine.jpg','twine_stats.png','twine_project.png','twine_log.png'],
     title: 'Twine App',
     info:
       'Fullstack React Native developer for an app that allows volunteers, volunteers admin and organisation owners of Charitable organisation to better keep track of their projects and activities ',
