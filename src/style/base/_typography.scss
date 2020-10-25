@@ -4,7 +4,10 @@ h1 {
   font-weight: 700;
 }
 
-p,
+p { 
+  font-size: 2.6rem;
+}
+
 a {
   font-family: 'Montserrat', sans-serif;
   font-size: $default-font-size;

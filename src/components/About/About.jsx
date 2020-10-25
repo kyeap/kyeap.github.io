@@ -46,7 +46,7 @@ const About = () => {
                 <Link
                   to="/resume"
                   className="cta-btn cta-btn--resume">
-                  Resum&eacute; 
+                  Resum&eacute;
                     </Link>
               </span>
             </div>
