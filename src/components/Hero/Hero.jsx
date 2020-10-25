@@ -3,6 +3,7 @@ import { Container } from 'react-bootstrap';
 import Fade from 'react-reveal/Fade';
 import { Link } from 'react-scroll';
 import PortfolioContext from '../../context/context';
+import Typed from 'react-typed';
 
 const Header = () => {
   const { hero } = useContext(PortfolioContext);
@@ -27,9 +28,21 @@ const Header = () => {
         <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
           <h1 className="hero-title">
             {title || 'Hi, my name is'}{' '}
-            <span className="text-color-main">{name || 'Your Name'}</span>
+            <span className="text-color-main">
+              <Typed
+                strings={[name || 'Your Name']}
+                startDelay={1000}
+                typeSpeed={70}
+              />
+            </span>
             <br />
-            {subtitle || "I'm the Unknown Developer."}
+            <Typed
+              strings={[
+                subtitle || "I'm the Unknown Developer."
+              ]}
+              startDelay={2000}
+              typeSpeed={70}
+            />
           </h1>
         </Fade>
         <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
