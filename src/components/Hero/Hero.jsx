@@ -33,13 +33,16 @@ const Header = () => {
                 strings={[name || 'Your Name']}
                 startDelay={1000}
                 typeSpeed={70}
+                showCursor={false}
               />
             </span>
             <br />
             <Typed
               strings={[
-                subtitle || "I'm the Unknown Developer."
+                "Technology", "Engineer", "Let's do business."
+                // subtitle || "I'm the Unknown Developer."
               ]}
+              // onTypingPaused={1, 2}
               startDelay={2000}
               typeSpeed={70}
             />
