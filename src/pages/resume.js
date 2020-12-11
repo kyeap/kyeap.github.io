@@ -1,7 +1,8 @@
 import React from 'react';
 import resumepic from '../images/resumepic.jpg';
-import { FaGithub, FaLinkedin, FaPhoneSquareAlt } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaPhoneSquareAlt, FaRegFilePdf } from 'react-icons/fa';
 import { HiMail } from "react-icons/hi";
+import cv from "../download/CV.pdf";
 import '../style/main.scss';
 
 export default () => {
@@ -49,6 +50,14 @@ export default () => {
                                     <a href="https://github.com/kyeap">
                                         <FaGithub /> kyeap
                                         </a>
+                                </div>
+
+                                <div className="resume-circle-footer-link desktop">
+                                    <a href={cv}> <FaRegFilePdf /> Download CV</a>
+                                </div>
+
+                                <div className="resume-circle-footer-link mobile">
+                                    <a href={cv}> <FaRegFilePdf /> Download CV</a>
                                 </div>
                                 {/* </div> */}
                             </div>
@@ -155,6 +164,13 @@ export default () => {
                     <div class="title">FREELANCE</div>
                     <div class="date"> 09/2019 - today</div>
                 </div>
+
+                <div class="sub-title">Software developer for Uniper SE (Energy company) </div>
+                <ul>
+                    <li>Maintained and develop software for energy trading based on business requirements</li>
+                    <li>Develop tools for CSV typed data migration using postgresql</li>
+                </ul>
+
                 <div class="sub-title">Laravel Developer for Illionis (Commercial app)</div>
                 <ul>
                     <li>Maintained and develop features needed for the CMS</li>
