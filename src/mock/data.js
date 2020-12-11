@@ -28,7 +28,7 @@ export const aboutData = {
 export const projectsData = [
   {
     id: nanoid(),
-    img: ['Ilios.png', 'ilios_logo','ilios_item'],
+    img: ['Ilios.png', 'ilios_logo', 'ilios_item'],
     title: 'Ilios App',
     info:
       'Backend developer for an ecommerce App for individual buyers, retailers and resellers using laravel.',
@@ -41,7 +41,7 @@ export const projectsData = [
   },
   {
     id: nanoid(),
-    img: ['twine.jpg','twine_stats.png','twine_project.png','twine_log.png'],
+    img: ['twine.jpg', 'twine_stats.png', 'twine_project.png', 'twine_log.png'],
     title: 'Twine App',
     info:
       'Fullstack React Native developer for an app that allows volunteers, volunteers admin and organisation owners of Charitable organisation to better keep track of their projects and activities ',
@@ -52,7 +52,7 @@ export const projectsData = [
       d: 'Developed postgresql database structure for push notification and award badges',
       e: 'Deployment in Heroku (Server) and Expo (App)',
     },
-    url: 'https://www.twine-together.com/',
+    url: 'https://apps.apple.com/gb/app/twine-app/id1531493894',
     tag: ['react native', 'nodeJs', 'TypeScript', 'iOS', 'Android', 'postgresql'],
     repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
   },
