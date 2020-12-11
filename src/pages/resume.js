@@ -165,18 +165,28 @@ export default () => {
                     <div class="date"> 09/2019 - today</div>
                 </div>
 
-                <div class="sub-title">Software developer for Uniper SE (Energy company) </div>
+                <div class="sub-title">Software developer for Uniper SE (Energy company)
+                    <div className="tag">OOP</div>
+                    <div className="tag">Energy Trading</div>
+                </div>
                 <ul>
                     <li>Maintained and develop software for energy trading based on business requirements</li>
                     <li>Develop tools for CSV typed data migration using postgresql</li>
                 </ul>
 
-                <div class="sub-title">Laravel Developer for Illionis (Commercial app)</div>
+                <div class="sub-title">Laravel Developer for Illionis (Commercial app)
+                    <div className="tag">Laravel</div>
+                    <div className="tag">CMS</div>
+                </div>
                 <ul>
                     <li>Maintained and develop features needed for the CMS</li>
                 </ul>
 
-                <div class="sub-title">React-Native developer for Twine-Monolith (Free to community businesses)</div>
+                <div class="sub-title">React-Native developer for Twine-Monolith (Free to community businesses)
+                    <div className="tag">React Native</div>
+                    <div className="tag">API</div>
+                    <div className="tag">HapiJS</div>
+                </div>
                 <ul>
                     <li>Developed mobile app with a team of designer and react-native developers</li>
                     <li>Built reusable react native components such as helpSlide and award badges templates</li>
@@ -185,7 +195,13 @@ export default () => {
                     <li>Deployment in Heroku (Server) and Expo (App)</li>
                 </ul>
 
-                <div class="sub-title">Fullstack developer for Bemyownboss (Digital marketing company)</div>
+                <div class="sub-title">Fullstack developer for Bemyownboss (Digital marketing company)
+                    <div className="tag">HTML</div>
+                    <div className="tag">CSS</div>
+                    <div className="tag">JavaScript</div>
+                    <div className="tag">PHP</div>
+                    <div className="tag">Sales Funnel</div>
+                </div>
                 <ul>
                     <li>Developed the frontend and backend for the various customer using CSS, HTML, JavaScript and PHP</li>
                     <li>Intergrated auto emailing system with mailchimp API using PHP</li>
@@ -193,13 +209,21 @@ export default () => {
                     <li>Help customer digitalize and systemize their business with sales funnel strategy</li>
                 </ul>
 
-                <div class="sub-title">Fullstack developer for Sooann-solutions(Insurance agency)</div>
+                <div class="sub-title">Fullstack developer for Sooann-solutions(Insurance agency)
+                    <div className="tag">HTML</div>
+                    <div className="tag">CSS</div>
+                    <div className="tag">JavaScript</div>
+                    <div className="tag">PHP</div>
+                    <div className="tag">CMS</div>
+                </div>
                 <ul>
                     <li>developed the frontend using CSS, HTML</li>
                     <li>Developed content management system with PHP and MySQL</li>
                 </ul>
 
-                <div class="sub-title">Angular Developer for Weco (Social News Company)</div>
+                <div class="sub-title">Angular Developer for Weco (Social News Company)
+                    <div className="tag">Angular</div>
+                </div>
                 <ul>
                     <li>Implement front-end design with Angular</li>
                 </ul>
@@ -209,7 +233,10 @@ export default () => {
                     <div class="date">  06/2018 - 02/2019</div>
                 </div>
 
-                <div class="sub-title">Advanced control engineer</div>
+                <div class="sub-title">Advanced control engineer
+                    <div className="tag">Smart Buildings</div>
+                    <div className="tag">Control engineering</div>
+                </div>
                 <ul>
                     <li> Build a Model Predictive Control Software to control building energy system with python and weather forecast API</li>
                     <li> Lowered time needed to understand the Cloud application through readability and documentations</li>
@@ -221,7 +248,10 @@ export default () => {
                     <div class="date">04/2017 - 04/2018</div>
                 </div>
 
-                <div class="sub-title">Engineer</div>
+                <div class="sub-title">Engineer
+                    <div className="tag">Virtual Power Plants</div>
+                    <div className="tag">Energy Reserve</div>
+                </div>
                 <ul>
                     <li> Developed tools that enhance efficiency and enable data analysis and technical support for virtual power plants.</li>
                     <li> Developed monitoring tools using excel to lower monitoring time and increase efficiency for troubleshooting with clients</li>
@@ -234,10 +264,14 @@ export default () => {
                     <div class="date"> 03/2013 - 09/2014</div>
                 </div>
 
-                <div class="sub-title">Student Engineer</div>
+                <div class="sub-title">Student Engineer
+                    <div className="tag">SAP</div>
+                    <div className="tag">P&amp;ID</div>
+                    <div className="tag">Gas Turbines</div>
+                </div>
                 <ul>
                     <li> Using visual basic to automatize and reduce management workload</li>
-                    <li> Graphical construction for Gas Turbine Fuel Changeover processes and overview of turbine model from P 	&amp; ID.</li>
+                    <li> Graphical construction for Gas Turbine Fuel Changeover processes and overview of turbine model from P&amp;ID.</li>
                     <li> Bachelor thesis </li>
                 </ul>
 

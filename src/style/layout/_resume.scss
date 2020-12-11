@@ -1,5 +1,7 @@
 #resume{
-    background-color: lightgray;
+    // background-color: lightgray;
+    // background: rgb(211,211,211);
+    // background: linear-gradient(0deg, rgba(211,211,211,0) 0%, rgba(211,211,211,0) 72%, rgba(255,255,255,0) 100%);
     height: 100%;
     width: 100%;
 
@@ -120,20 +122,6 @@
         font-size: 15px;
         margin: 5px 0px;
     }
-
-    .tag-container {
-        margin: 10px auto;
-    }
-
-    .tag {
-        display: inline-block;
-        background-color: #55585a;
-        border-radius: 10px;
-        color: #ffffff;
-        margin: 5px;
-        padding: 0px 10px;
-        font-size: 15px;
-      }
     
     .title {
         text-align: center;
@@ -180,7 +168,7 @@
 
 #section-classic {
     margin: 30px auto 0 auto;
-    width: 70%;
+    width: 80%;
     text-align: left;
         
     .header {
@@ -221,20 +209,39 @@
         margin: 10px 0;
     }
 
-    @media only screen and (max-width: 1000px) {
-        .title-container {
-            display: block;
-        }
+    // @media only screen and (max-width: 1000px) {
+    //     .title-container {
+    //         display: block;
+    //     }
 
-        li {
-            margin: 10px 0;
-        }
+    //     li {
+    //         margin: 10px 0;
+    //     }
 
-        .sub-title{
-            margin: 10px 0 0 0;
-            text-decoration: underline;
-        }
-    }
+    //     .sub-title{
+    //         margin: 10px 0 0 0;
+    //         text-decoration: underline;
+    //     }
+    // }
 
 }
 
+@media only screen and (max-width: 1000px) {
+    #section-classic {
+        display: none;
+    }
+}
+
+.tag-container {
+    margin: 10px auto;
+}
+
+.tag {
+    display: inline-block;
+    background-color: #55585a;
+    border-radius: 10px;
+    color: #ffffff;
+    margin: 5px;
+    padding: 0px 10px;
+    font-size: 15px;
+  }
