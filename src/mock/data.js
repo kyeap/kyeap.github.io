@@ -58,6 +58,23 @@ export const projectsData = [
   },
   {
     id: nanoid(),
+    img: 'GRF_home.png',
+    title: 'Gemma Rose Foundation',
+    info:
+      'Wordpress developer, implementing design for a non-profit foundation',
+    point: {
+      one: 'Use generate press template',
+      two: 'Implement tidio Chat function ',
+      three: 'Multiple payment methods',
+      d: 'Form 7 plugin',
+      e: 'Super WPA plugin',
+    },
+    url: 'https://gemmarosefoundation.com/',
+    tag: ['wordpress'],
+    repo: '', // if no repo, the button will not show up
+  },
+  {
+    id: nanoid(),
     img: 'bemyownboss.png',
     title: 'Bemyownboss',
     info:
