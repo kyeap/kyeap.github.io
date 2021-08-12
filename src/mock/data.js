@@ -28,6 +28,34 @@ export const aboutData = {
 export const projectsData = [
   {
     id: nanoid(),
+    img: 'reuse.png',
+    title: 'Multivendor E-commerce platform',
+    info:
+      'Prestashop developer configuring and developping modules.',
+    point: {
+      one: 'Implemented and configured various prestashop module including a mutlivendor module',
+      two: "Developed postcode check module in prestashop",
+      three: "Managed a team of developers on building an advance search module",
+      d: "Extended exisiting webservices",
+      e: "Setup vps hosting"
+    },
+    url: 'http://reuse-home.org.uk/',
+    tag: ['Prestashop', 'JavaSript', 'PHP', 'Sympfony'],
+  },
+  {
+    id: nanoid(),
+    img: 'borderlandsgrowth.png',
+    title: 'Borderlandsgrowth project',
+    info:
+      'React developer using gatsby',
+    point: {
+      one: 'Developed using gatsby',
+    },
+    url: 'http://reuse-home.org.uk/',
+    tag: ['Prestashop', 'JavaSript', 'PHP', 'Sympfony'],
+  },
+  {
+    id: nanoid(),
     img: ['Ilios.png', 'ilios_logo', 'ilios_item'],
     title: 'Ilios App',
     info:

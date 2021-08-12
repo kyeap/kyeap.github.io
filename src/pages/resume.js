@@ -73,6 +73,9 @@ export default () => {
                             </ul>
                             <div className="section-resume-subTitle">Websites</div>
                             <ul>
+                                <li className="list-resume">Maps for public sector</li>
+                                <li className="list-resume">Dashboards for managers</li>
+                                <li className="list-resume">E-commerce multivendor platform</li>
                                 <li className="list-resume">Introduction and blog site for COOP</li>
                                 <li className="list-resume">Charitable foundation website</li>
                                 <li className="list-resume">Marketing site with sales funnel</li>
@@ -132,6 +135,7 @@ export default () => {
                                 <div className="tag">React Native</div>
                                 <div className="tag">React</div>
                                 <div className="tag">Laravel</div>
+                                <div className="tag">Sympfony</div>
                                 <div className="tag">MySQL</div>
                                 <div className="tag">Postgresql</div>
                                 <div className="tag">GraphQL</div>
@@ -139,8 +143,11 @@ export default () => {
                                 <div className="tag">NodeJS</div>
                                 <div className="tag">Axios</div>
                                 <div className="tag">iOS</div>
+                                <div className="tag">Esri</div>
                                 <div className="tag">Android</div>
                                 <div className="tag">Heroku</div>
+                                <div className="tag">Docker</div>
+                                <div className="tag">Solarwinds</div>
                             </div>
                         </div>
 
@@ -161,9 +168,46 @@ export default () => {
             <div id="section-classic">
                 <div class="header"> Work Experience </div>
                 <div class="title-container">
+                    <div class="title">Northumberland County Council</div>
+                    <div class="date"> 03/2021 - today</div>
+                </div>
+                <div class="sub-title">Software developer
+                    <div className="tag">React</div>
+                    <div className="tag">HTML</div>
+                    <div className="tag">CSS</div>
+                    <div className="tag">JavaScript</div>
+                    <div className="tag">Public Sector</div>
+                    <div className="tag">Esri</div>
+                    <div className="tag">DevOps</div>
+                    <div className="tag">GitLab</div>
+                    <div className="tag">Solarwinds</div>
+                </div>
+                <ul>
+                    <li>Developed grants dashboard with react for managers</li>
+                    <li>Developed interactive map to show school in northumberland using esri API v4.x</li>
+                    <li>Developed the borderlands growth website</li>
+                    <li>Developed contineous intergration pipelines in gitlab</li>
+                    <li>Developed monitoring infrastructure using solarwinds</li>
+                </ul>
+
+                <div class="title-container">
                     <div class="title">FREELANCE</div>
                     <div class="date"> 09/2019 - today</div>
                 </div>
+                <div class="sub-title">Software developer Reuse
+                    <div className="tag">Prestashop</div>
+                    <div className="tag">PHP</div>
+                    <div className="tag">Sympfony</div>
+                    <div className="tag">E-commerce</div>
+                    <div className="tag">Docker</div>
+                </div>
+                <ul>
+                    <li>Implemented and configured various prestashop module including a mutlivendor module</li>
+                    <li>Developed postcode check module in prestashop</li>
+                    <li>Managed a team of developers on building an advance search module</li>
+                    <li>Extended exisiting webservices</li>
+                    <li>Setup vps hosting</li>
+                </ul>
 
                 <div class="sub-title">Software developer for Uniper SE (Energy company)
                     <div className="tag">OOP</div>
