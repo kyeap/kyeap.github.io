@@ -2,6 +2,9 @@ import React, {useEffect, useState} from 'react';
 import { Helmet } from 'react-helmet';
 // import App from '../components/App';
 // import '../style/awp.scss';
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
+
 
 
 export default () => {
@@ -22,6 +25,8 @@ export default () => {
   const [stock, setStock] = useState("VUSA.LON");
   const [bond, setBond] = useState("INXG.LON");
   const [gold, setGold] = useState("SGLD.LON");
+
+  // const [totalCost, setTotalCost] = useState(0);
 
   const duration = (Math.round(new Date() - buyDate)/(7 * 24 * 60 * 60 * 1000)+1) //number of weeks since bought
 
@@ -60,17 +65,25 @@ export default () => {
   }
   
   const buyWeekFridayMS = buyDate.setDate( buyDate.getDate() + 5 - buyDate.getDay());
-  console.log(combinedArr);
+  console.log('rerendered');
 
-  let buyWeekObj;
-  if (combinedArr != []) {
+  let buyWeekObj,totalCost;
+  if (combinedArr.length > 0 ) {
     buyWeekObj = combinedArr.find(obj => new Date(obj.date).getTime() == buyWeekFridayMS);
+    totalCost = (buyWeekObj.gold * goldNum + buyWeekObj.bond * bondNum + buyWeekObj.stock * stockNum);
   }
 
-  const totalCost = buyWeekObj.gold * goldNum + buyWeekObj.bond * bondNum + buyWeekObj.stock * stockNum;
   
   return (
     <>
+      <DatePicker selected={buyDate} onChange={(date) => setBuyDate(date)} />
+      <label>Number of Stock:</label>
+      <input type="number" value={stockNum} onChange={(e) => setStockNum(e.target.value)}></input>
+      <label>Number of Gold:</label>
+      <input type="number" value={goldNum} onChange={(e) => setGoldNum(e.target.value)}></input>
+      <label>Number of Bond:</label>
+      <input type="number" value={bondNum} onChange={(e) => setBondNum(e.target.value)}></input>
+
       <div>Some components</div>
       <table>
         <tr>
